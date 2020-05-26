@@ -22,28 +22,26 @@
             Retrieve the records from tasks collection and show only tasks from a selected team using the team's ID
 
 
+---------------------------------------------------------------------------------------------------------------------------
 
-        db.teams.insertMany([
-            {
-                name: "Instructors Team",
-                createdAt: new Date(),
-                updatedAt: new Date()
-                },
-            {
-                name: "Tech Team",
-                createdAt: new Date(),
-                updatedAt: new Date()
-                },
-            
-            {
-                name: "HR Team",
-                createdAt: new Date(),
-                updatedAt: new Date()
-                }
-        ])
+        e. For update-specific-task.js:
+            Update the tasks of a selected team (using its team's ID). Set the isCompleted from false to true using the $set operator.
+
+            ex. Instructors Team -> set the tasks isCompleted into "true"
+
+        f. For delete-specific-tasks.js
+            Delete the tasks of the selected team (using is team's ID)
+
+            ex. Tech Team -> delete all the tasks
+
+    *STRETCH GOAL*
+        g. For delete-multiple-tasks.js
+            Delete the tasks of the selected team, where the isCompleted is true
                     
 
 */
+
+
 
 
 /*

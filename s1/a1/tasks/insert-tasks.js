@@ -11,7 +11,7 @@ db.tasks.insertMany([
     {
         description: "Check Attendance",
         teamID: ObjectId("5eccaf988af3db5565717c80"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -19,7 +19,7 @@ db.tasks.insertMany([
     {
         description: "Teach Students",
         teamID: ObjectId("5eccaf988af3db5565717c80"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -27,7 +27,7 @@ db.tasks.insertMany([
     {
         description: "Grade Students",
         teamID: ObjectId("5eccaf988af3db5565717c80"),
-        isCompleted: 0,
+        isCompleted: false,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -35,7 +35,7 @@ db.tasks.insertMany([
     {
         description: "Create Codes",
         teamID: ObjectId("5eccaf988af3db5565717c81"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -43,7 +43,7 @@ db.tasks.insertMany([
     {
         description: "Check Codes",
         teamID: ObjectId("5eccaf988af3db5565717c81"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -51,7 +51,7 @@ db.tasks.insertMany([
     {
         description: "Update Codes",
         teamID: ObjectId("5eccaf988af3db5565717c81"),
-        isCompleted: 0,
+        isCompleted: false,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -59,7 +59,7 @@ db.tasks.insertMany([
     {
         description: "Orient Interested Enrollee",
         teamID: ObjectId("5eccaf988af3db5565717c82"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -67,7 +67,7 @@ db.tasks.insertMany([
     {
         description: "Give Entrance Exam to Interested Enrollee",
         teamID: ObjectId("5eccaf988af3db5565717c82"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -75,7 +75,7 @@ db.tasks.insertMany([
     {
         description: "Interview the Interested Enrollee",
         teamID: ObjectId("5eccaf988af3db5565717c82"),
-        isCompleted: 1,
+        isCompleted: true,
         createdAt: new Date(),
         updatedAt: new Date()
     },
@@ -83,7 +83,7 @@ db.tasks.insertMany([
     {
         description: "Contract Signing with the Enrollee",
         teamID: ObjectId("5eccaf988af3db5565717c82"),
-        isCompleted: 0,
+        isCompleted: false,
         createdAt: new Date(),
         updatedAt: new Date()
     },
