@@ -5,6 +5,8 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+const graphqlHTTP = require('express-graphql')
+const graphqlSchema = require('./gql-schema')
 
 // const Task = require('./models/tasks.js')
 
@@ -36,6 +38,12 @@ mongoose.connection.once('open', ()=>{
     Due to Deprecration Warning on our mongoose.connect, we used the below command:
 
     { useNewUrlParser: true, useUnifiedTopology: true}
+*/
+
+app.use('/graphql', graphqlHTTP({ schema: graphqlSchema, graphiql: true}))
+/*
+    The "use middleware" area of our code tells that any request must be firected at the url registered inside as argument
+    - the 2nd argument calls the graphiql playground/interface with a schema called "graphqlSchema"
 */
 
 app.listen(4000, () => {

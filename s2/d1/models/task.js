@@ -10,9 +10,9 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const taskSchema = new Schema({
-    description: String,
-    teamId: String,
-    isCompleted: Boolean
+    description: {type: String, required:true},
+    teamID: {type: String, required:true},
+    isCompleted: {type: Boolean, default:false}
 },
     {
         timestamps: true
