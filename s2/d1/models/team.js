@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const teamSchema = new Schema({
     name: {type: String, required:true},
+    taskID: {type: String, required:true}
 }, {
     timestamps: true
 })

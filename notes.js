@@ -134,7 +134,27 @@
         }
     }
 
+
+
+    GraphQL -> MODEL -> Local Server MongoDB -> Collections -> get Documents
+
+    To mutate on our GraphQL playground:
+        *mutationProcess -> these are the addTeam, updateTeam and deleteTeam
+        *() -> this is where you add your arguments
+    mutation{
+        mutationProcess(args:values){
+            returned properties
+        }
+    }
+
+
+
+
 */
+
+
+
+
 
 
 

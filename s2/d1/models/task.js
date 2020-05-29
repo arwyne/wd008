@@ -11,7 +11,7 @@ const Schema = mongoose.Schema
 
 const taskSchema = new Schema({
     description: {type: String, required:true},
-    teamID: {type: String, required:true},
+    teamID: {type: mongoose.ObjectId, required:true},
     isCompleted: {type: Boolean, default:false}
 },
     {
