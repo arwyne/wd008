@@ -275,7 +275,7 @@ const Mutation = new GraphQLObjectType ({
             type: TaskType,
             args: {
                 description: {type: new GraphQLNonNull(GraphQLString)},
-                teamID: {type: new GraphQLNonNull(GraphQLString)},
+                teamID: {type: new GraphQLNonNull(GraphQLID)},
             },
             resolve: (parent, args) => {
                 let newTask = new Task({
@@ -300,6 +300,19 @@ const Mutation = new GraphQLObjectType ({
                 })
             }
         },
+
+        // solution ni mam
+        // updateTask: {
+        //     type: TaskType,
+        //     args: {
+        //         id: {type: new GraphQLNonNull(GraphQLID)}
+        //     },
+        //     resolve: (parents, args) => {
+        //         let taskID = {_id: args.id}
+        //         let updateTask = {isCompleted: true}
+        //         return Task.findOneAndUpdate(taskID, updateTask)
+        //     }
+        // },
 
         deleteTask: {
             type: TaskType,
